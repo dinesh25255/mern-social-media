@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+    scroll-behavior: smooth;
+
+}
+html {
+    scroll-behavior: smooth;
+}
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    75% {
+        transform: translateX(-5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.animate-shake {
+    animation: shake 0.5s ease-in-out;
+}
+
+
+
+
+.active {
+    color: #a855f7;
+}
+
+/* Large screens */
+@media (min-width: 992px) {
+    .active {
+        background-color: #a855f7;
+        color: white;
+        padding: 15px 0;
+        border-radius: 100px;
+    }
+
+    .active:hover {
+        color: white;
+    }
+}
+
+/* Medium screens */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* No additional styles for medium screens */
+    /* The color and padding are not applied */
+    /* Only the common color from .active class is used */
+    .active:hover {
+        color: #a855f7;
+    }
+}
+
+/* Small screens */
+@media (max-width: 767px) {
+    .active {
+        /* Only the color is applied for small screens */
+        color: #a855f7;
+    }
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+    .mobile-active-icon.active {
+        color: #a855f7;
+        /* Purple color for active icon */
+    }
+}
+
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #8B5CF6;
+    border-radius: 4px;
+}
+
+/* For Firefox */
+::-moz-scrollbar {
+    width: 8px;
+}
+
+::-moz-scrollbar-thumb {
+    background-color: #8B5CF6;
+    border-radius: 4px;
+}
+
+
+
+
+.swiper-slide {
+  
+    border-radius: 18px;
+  
+}
+.login_loading{
+    animation: spin 2s linear infinite;
+}
